@@ -1,3 +1,4 @@
+
 @import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800); /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -14,6 +15,107 @@
   font-weight: normal;
   font-style: normal;
 }
+
+/* objetivos */
+.content-wrapper {
+  padding: 60px 0;
+}
+.feature-icon {
+  padding: 16px 0;
+  cursor: pointer;
+}
+.has-text-centered {
+  text-align: center !important;
+}
+.feature-icon .icon-wrap {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 1px solid #e3e3e3;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 0 auto 10px auto;
+  color: #000;  
+  transition: margin-top 0.2s ease-in-out;
+}
+.icon-wrap:hover{
+  margin-top: -2 !important;
+}
+.icon-inner, .ionicon, svg {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+h4{
+  color: #ffa200!important;
+}
+#banner{
+  position: relative;
+		width: 100%;
+		height: 100vh;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+}
+.hero-body .colum img{
+  position:absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+}
+.partnersMap {
+height: 40%;
+width: 500px;
+}
+
+
+
+
+
+
+/*ODS*/
+#ods-section{
+  background: #fff;
+}
+#ods-section .container {
+  z-index: 999;
+  min-height: 200px;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: -10px;  
+}
+
+/* Fin ODS */
+
+/*Carousel*/
+.slider-navigation-previous,
+.slider-navigation-next {
+  display: none !important;
+}
+/*Fin carousel*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -2743,6 +2845,11 @@ body {
   font-size: 1em;
   font-weight: 400;
   line-height: 1.5;
+  /* background-image: url(../img/); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color:#2ce28a;
 }
 a {
   color: #ffa200;
@@ -10646,7 +10753,7 @@ label.panel-block:hover {
   }
 }
 .columns.is-variable {
-  --columnGap: 0.75rem;
+  --columnGap: 0rem;
   margin-left: calc(-1 * var(--columnGap));
   margin-right: calc(-1 * var(--columnGap));
 }
@@ -12926,29 +13033,27 @@ label.panel-block:hover {
   padding: 6px 30px 6px;
   font-weight: bold;
 }
-#deals-section {
+#objetivos-section {
   padding-top: 75px;
   padding-bottom: 75px;
   margin-top: -100px;
   background-color: #fff;
 }
-#deals-section .title {
+#objetivos-section .title {
   padding-top: 100px;
   font-size: 38px;
   font-weight: bold;
   text-transform: uppercase;
 }
-#deals-section p {
+#objetivos-section p {
   font-size: 16px;
   line-height: 24px;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   color: #464646;
 }
-#deals-section .card {
-  box-shadow: none;
-}
-#deals-section .tour-caption .vertical-align {
+
+#objetivos-section .tour-caption .vertical-align {
   position: absolute;
   top: 0;
   right: 25px;
@@ -12959,7 +13064,7 @@ label.panel-block:hover {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
-#deals-section .tour-caption .vertical-bottom {
+#objetivos-section .tour-caption .vertical-bottom {
   position: absolute;
   bottom: 25px;
   left: 0;
@@ -12967,36 +13072,36 @@ label.panel-block:hover {
   padding-left: 15px;
   color: #fff;
 }
-#deals-section .date p {
+#objetivos-section .date p {
   font-weight: bold;
   color: white;
 }
-#deals-section .date span {
+#objetivos-section .date span {
   border-left: 2px solid #fff;
   border-right: 2px solid #fff;
   padding: 0 10px;
   margin: 0 10px;
 }
-#deals-section .card-content {
+#objetivos-section .card-content {
   padding: 20px 0 0 0;
 }
-#deals-section .media-content .subtitle {
+#objetivos-section .media-content .subtitle {
   font-size: 22px;
   text-transform: uppercase;
   font-weight: bold;
 }
-#deals-section .content {
+#objetivos-section .content {
   margin-bottom: 24px;
 }
-#deals-section footer {
+#objetivos-section footer {
   border: none;
 }
-#deals-section footer .card-footer-item {
+#objetivos-section footer .card-footer-item {
   border: none;
   justify-content: left;
   padding-left: 0px;
 }
-#deals-section footer .card-footer-item .button {
+#objetivos-section footer .card-footer-item .button {
   padding: 0 23px 0 23px;
   font-weight: bold;
   height: 100%;
@@ -13063,6 +13168,12 @@ label.panel-block:hover {
   padding-top: 130px;
   padding-bottom: 120px;
   text-align: center;
+
+  background-image: url(../img/footerbg.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
 }
 #counter-section .counter-container {
   width: 2000;

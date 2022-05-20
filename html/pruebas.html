@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../css/main.css" rel="stylesheet" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/> 
+</head>
+<body>
+    <div class="hero-body" id="banner">
+      <div class="container has-text-centered"></div>
+          <div class="column is-10 is-offset-1">
+              <ul>
+                <li class="layer" data-speed="2"> <img src="../img/leaves1.png" alt=""></li>
+                <li class="layer" data-speed="-4"><img src="../img/leaves2.png" alt=""></li>
+                <li class="layer" data-speed="3"><img src="../img/leaves3.png" alt=""></li>
+                <li class="layer" data-speed="5"><img src="../img/leaves4.png" alt=""></li>  
+              </ul>
+              
+              <h1 class="title has-text-white">
+              Cf <span class="has-text-primary">TRAIN</span> in  Vet
+            </h1>
+            <p class="subtitle has-text-white">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's
+            </p>
+          </div>
+        </div>
+      </div>
+</div>
+<script>
+    document.addEventListener("mousemove", parallax);
+    function parallax(e){
+        this.querySelectorAll('.layer').forEach(layer => {
+          const speed =layer.getAttribute('data-speed')
+            const x =(window.innerWidth-e.pageX*value)/100
+            const y =(window.innerHeight-e.pageY*value)/100
+            layer.style.transform=`translateX(${x}) translateY(${y})`
+        });
+    }
+</script>
+</body>
+</html>
