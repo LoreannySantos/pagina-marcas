@@ -1,653 +1,397 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Lobby</title>
-    <link href="../css/main.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/> 
-  </head>
-   <body>
-    <!-- navbar -->
-    <section class="hero is-fullheight">
-      <div class="hero-head">
-        <nav class="navbar">
-          <div class="container">
-            <div class="navbar-brand">
-              <a class="navbar-item" href="../">
-                <figure class="image">
-                    <img src="../img/LogoCFTrainInVET (Personalizado) (1).png" alt="Logo" /></a>
-                </figure>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lobby</title>
+  <link href="../css/main.css" rel="stylesheet" />
+  <script src="../js/main.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+  <button id="btnTop" class="button is-rounded is-link">^</button>
+  <!-- navbar -->
+  <section class="hero is-fullheight has-background-primary">
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+              <figure class="image">
+                <img src="../img/LogoCFTrainInVET(Personalizado)(1).png" alt="Logo" />
+              </figure>
+            </a>
             <span class="navbar-burger burger" data-target="navbarMenu">
-                <span></span><span></span><span></span></span>
-            </div>
-            <div id="navbarMenu" class="navbar-menu">
-              <div class="navbar-end">
-                <span class="navbar-item"><a href="#">Home</a></span>
-                <span class="navbar-item"><a href="partners.html">Partners</a></span>
-                <span class="navbar-item"><a href="#">Activities</a></span>
-                <span class="navbar-item"><a href="#" ><span class="icon"><i class="icon-search"></i></span></a>
-                </span>
-              </div>
-            </div>
+              <span></span><span></span><span></span></span>
           </div>
-        </nav>
-      </div>
-      <div class="hero-body" id="banner">
-        <div class="container has-text-centered">
-          <div class="column is-10 is-offset-1">
-            <h1 class="title has-text-white">
-              Cf <span class="has-text-primary">TRAIN</span> in  Vet
-            </h1>
-            <p class="subtitle has-text-white">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-<!-- fin navbar -->
-    
-    <!-- <section id="search-section">
-      <div class="container box-shadow">
-        <div class="column is-10 is-offset-1">
-          <h1 class="title has-text-centered">Search Your Tours</h1>
-          <div class="field is-horizontal">
-            <div class="control">
-              <input class="input" type="text" placeholder="Destinations" />
-            </div>
-            <div class="control">
-              <input class="input" type="text" placeholder="mm/dd/yyyy" />
-            </div>
-            <div class="control">
-              <input class="input" type="text" placeholder="mm/dd/yyyy" />
-            </div>
-            <div class="control">
-              <input class="input" type="text" placeholder="$1000 - $3000" />
-            </div>
-            <div class="control">
-              <button class="button is-primary">Search</button>
+          <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-end">
+              <span class="navbar-item"><a href="index.html">Home</a></span>
+              <span class="navbar-item"><a href="partners.html">Partners</a></span>
+              <span class="navbar-item"><a href="activities.html">Activities</a></span>
             </div>
           </div>
         </div>
-      </div>
-    </section> -->
-    
-    <section id="objetivos-section">
-      <div class="container has-text-centered m-b-40">
-        <div class="column is-8 is-offset-2">
-          <h2 class="title">Objetivos</h2>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's
-          </p>
-        </div>
-      </div>
-      <div class="content-wrapper ">
-        <div class="columns is-multiline icon-list">
-            <div class="column is-3">
-                <div class="feature-icon has-text-centered">
-                    <div class="icon-wrap ">
-                      <i class="fa-solid fa-calculator fa-2x"></i>
-                    </div>
-                    <h4>Carbon Footprint Calculation</h4>
-                    <p>Train students and staff in Carbon Footprint calculation.</p>
-                </div>
-            </div>
-            <div class="column is-3">
-                <div class="feature-icon has-text-centered">
-                    <div class="icon-wrap ">
-                      <img src="../img/co2-reduction-black.png" alt="co2" />
-                    </div>
-                    <h4>Emissions Reduction</h4>
-                    <p> Reduce 30% of school emissions</p>
-                </div>
-            </div>
-            <div class="column is-3">
-                <div class="feature-icon has-text-centered">
-                    <div class="icon-wrap">
-                      <i class="fa-solid fa-tree fa-2x"></i>
-                    </div>
-                    <h4>Students and staff with green skills</h4>
-                    <p>Raise school-wide awareness on climate change</p>
-                </div>
-            </div>
-            <div class="column is-3">
-                <div class="feature-icon has-text-centered">
-                    <div class="icon-wrap">    
-                      <i class="fa-solid fa-share fa-2x"></i>    
-                    </div>
-                    <h4>Share good practices</h4>
-                    <p>Get students to share good practices at an international level</p>
-                </div>
-            </div>
-            <div class="columns is-mobile">
-              <div class="column is-half is-offset-one-quarter"></div>
-            </div>
-            <div class="columns is-mobile">
-              <div class="column is-three-fifths is-offset-one-fifth"></div>
-            </div>
-            <div class="columns is-mobile">
-              <div class="column is-4 is-offset-8"></div>
-            </div>
-            <div class="columns is-mobile">
-              <div class="column is-4 is-offset-8"></div>
-            </div>
-          
-            <div class="column is-3">
-                <div class="feature-icon has-text-centered">
-                    <div class="icon-wrap ">
-                      <i class="fa-solid fa-equals fa-2x"></i>
-                    </div>
-                    <h4> Social Inclusion And Gender Equality</h4>
-                    <p>Involve 100 % of students with special needs in the project</p>
-                </div>
-            </div>
-            <div class="column is-3">
-                <div class="feature-icon has-text-centered">
-                    <div class="icon-wrap ">
-                      <i class="fa-solid fa-school fa-2x"></i>
-                    </div>
-                    <h4>Involve companies and schools</h4>
-                    <p>Involve all the students and partners in the project(CF reduction and calculation)</p>
-                </div>
-            </div>
-            <div class="column is-3">
-                <div class="feature-icon has-text-centered">
-                    <div class="icon-wrap">
-                      <i class="fa-solid fa-scroll fa-2x"></i>  
-                    </div>
-                    <h4>New policies and plans</h4>
-                    <p>Design school environmental policies and sustainability plans</p>
-                </div>
-            </div>
-        </div>
+      </nav>
     </div>
-    </section>
-      <!-- <div class="container">
-        <div class="columns">
-          <div class="column is-4">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img src="../img/service1.png" alt="Placeholder image" />
-                </figure>
-                <div class="tour-caption">
-                  <div class="vertical-align has-background-primary">
-                    50%<br />OFF
-                  </div>
-                  <div class="vertical-bottom">
-                    <div class="rate">
-                      <i class="fa fa-star has-text-primary"></i
-                      ><i class="fa fa-star has-text-primary"></i
-                      ><i class="fa fa-star has-text-primary"></i
-                      ><i class="fa fa-star has-text-primary"></i
-                      ><i class="fa fa-star has-text-primary"></i>
-                    </div>
-                    <div class="date block">
-                      <p>7days<span>12 Hrs</span>20min</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content">
-                    <p class="subtitle">Lorem Ipsum is simply</p>
-                  </div>
-                </div>
-                <div class="content">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </div>
-                <footer class="card-footer">
-                  <p class="card-footer-item">
-                    <span class="is-pulled-left"
-                      >Start From<br /><span
-                        class="has-text-weight-bold has-text-primary is-size-5"
-                        >$299</span
-                      ></span
-                    >
-                  </p>
-                  <p class="card-footer-item">
-                    <a class="button is-primary" href="">Book Now</a>
-                  </p>
-                </footer>
-              </div>
-            </div>
-          </div>
-          <div class="column is-4">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img src="../img/service1.png" alt="Placeholder image" />
-                </figure>
-                <div class="tour-caption">
-                  <div class="vertical-align has-background-primary">
-                    50%<br />OFF
-                  </div>
-                  <div class="vertical-bottom">
-                    <div class="rate">
-                      <span class="fa fa-star has-text-primary"></span
-                      ><span class="fa fa-star has-text-primary"></span
-                      ><span class="fa fa-star has-text-primary"></span
-                      ><span class="fa fa-star has-text-primary"></span
-                      ><span class="fa fa-star has-text-primary"></span>
-                    </div>
-                    <div class="date block">
-                      <p>7days<span>12 Hrs</span>20min</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content">
-                    <p class="subtitle">Lorem Ipsum is simply</p>
-                  </div>
-                </div>
-                <div class="content">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </div>
-                <footer class="card-footer">
-                  <p class="card-footer-item">
-                    <span class="is-pulled-left"
-                      >Start From<br /><span
-                        class="has-text-weight-bold has-text-primary is-size-5"
-                        >$299</span
-                      ></span
-                    >
-                  </p>
-                  <p class="card-footer-item">
-                    <a class="button is-primary" href="">Book Now</a>
-                  </p>
-                </footer>
-              </div>
-            </div>
-          </div>
-          <div class="column is-4">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img src="../img/service1.png" alt="Placeholder image" />
-                </figure>
-                <div class="tour-caption">
-                  <div class="vertical-align has-background-primary">
-                    50%<br />OFF
-                  </div>
-                  <div class="vertical-bottom">
-                    <div class="rate">
-                      <span class="fa fa-star has-text-primary"></span
-                      ><span class="fa fa-star has-text-primary"></span
-                      ><span class="fa fa-star has-text-primary"></span
-                      ><span class="fa fa-star has-text-primary"></span
-                      ><span class="fa fa-star has-text-primary"></span>
-                    </div>
-                    <div class="date block">
-                      <p>7days<span>12 Hrs</span>20min</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content">
-                    <p class="subtitle">Lorem Ipsum is simply</p>
-                  </div>
-                </div>
-                <div class="content">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </div>
-                <footer class="card-footer">
-                  <p class="card-footer-item">
-                    <span class="is-pulled-left"
-                      >Start From<br /><span
-                        class="has-text-weight-bold has-text-primary is-size-5"
-                        >$299</span
-                      ></span
-                    >
-                  </p>
-                  <p class="card-footer-item">
-                    <a class="button is-primary" href="">Book Now</a>
-                  </p>
-                </footer>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-      
-    </section>
-    <section id="destination-section">
-      <div class="container has-text-centered">
-        <div class="column is-8 is-offset-2">
-          <h2 class="title">OUR DESTINATIONS</h2>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's
-          </p>
-        </div>
-      </div>
-      <div class="container">
-        <div class="columns">
-          <div class="column is-6">
-            <div class="map"><img src="../img/map.png" alt="" /></div>
-          </div>
-          <div class="column is-6">
-            <div class="columns">
-              <div class="column is-4">
-                <div class="destination">
-                  <h4>ASIA</h4>
-                  <ul>
-                    <li>Aenean</li>
-                    <li>Etiam</li>
-                    <li>Donec</li>
-                  </ul>
-                  <h4>AFRICA</h4>
-                  <ul>
-                    <li>AFRICA</li>
-                    <li>Duis Eu</li>
-                    <li>Morbi Nisl</li>
-                    <li>Curabitur</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="column is-4">
-                <div class="destination">
-                  <h4>EUROPE</h4>
-                  <ul>
-                    <li>Maecenas</li>
-                    <li>Cras Sagittis</li>
-                    <li>Vestibulum</li>
-                  </ul>
-                  <h4>AUSTRALIA</h4>
-                  <ul>
-                    <li>Vivamus</li>
-                    <li>Nibh Odio</li>
-                    <li>Dictum</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="column is-4">
-                <div class="destination">
-                  <h4>AMERICA</h4>
-                  <ul>
-                    <li>Morbi Sed</li>
-                    <li>Pellentesque</li>
-                    <li>Proin</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="columns">
-              <div class="column">
-                <a class="button is-primary" href="">View All</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section class="section" id="ods-section">
-			<div class="container has-text-centered">
-        <h2 class="title">OUR SDGs</h2>
-        <div class="columns">
-          <div class="column">
-          <a href="https://sdgs.un.org/goals/goal7" target="_blank"><img src="../img/7.png"></a>
-          </div>
-					<div class="column">
-            <a href="https://sdgs.un.org/goals/goal11" target="_blank"><img src="../img/11.png"></a>
-					</div>
-					<div class="column">
-					<a href="https://sdgs.un.org/goals/goal12" target="_blank"><img src="../img/12.png"></a>
-					</div>
-					<div class="column">
-					<a href="https://sdgs.un.org/goals/goal13" target="_blank"><img src="../img/13.png"></a>
-					</div>
-					<div class="column">
-					<a href="https://sdgs.un.org/goals/goal17" target="_blank"><img src="../img/17.png"></a>
-					</div>
-        </div>
-		</section>
 
-    <!-- Inicio del carousel -->
-    <!-- <div id="carousel-partners" class="carousel">
-					<div class="item-1">
-            <a href="https://sdgs.un.org/goals/goal11" target="_blank"><img src="../img/11.png"></a> Aquí van los partners
-					</div>
-					<div class="item-3">
-					<a href="https://sdgs.un.org/goals/goal12" target="_blank"><img src="../img/12.png"></a> Aquí van los partners
-					</div>
-					<div class="item-5">
-					<a href="https://sdgs.un.org/goals/goal13" target="_blank"><img src="../img/13.png"></a> Aquí van los partners
-					</div>
-					<div class="item-7">
-					<a href="https://sdgs.un.org/goals/goal17" target="_blank"><img src="../img/17.png"></a> Aquí van los partners
-					</div>
-					<div class="item-9">
-					<a href="https://sdgs.un.org/goals/goal7" target="_blank"><img src="../img/7.png"></a> Aquí van los partners
-					</div>
-				</div>
-		 <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script> -->
-    <!-- Fin del carousel -->
 
-    <section id="packages-section">
-      <div class="container has-text-centered p-b-25">
-        <div class="column is-8 is-offset-2">
-          <h2 class="title">OUR PACKAGES</h2>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's
-          </p>
+    <!-- hojas -->
+    <div class="hero-body is-fullheight has-text-centered">
+      <div class="containerparallax">
+        <h1 class="title has-text-white .object">
+          Cf <span class="has-text-white">TRAIN</span> in Vet
+        </h1>
+        <img src="../img/leaves1.png" class="object" data-value="2" alt="">
+        <img src="../img/leaves2.png" class="object" data-value="6" alt="">
+        <img src="../img/leaves3.png" class="object" data-value="4" alt="">
+        <img src="../img/leaves4.png" class="object" data-value="-6" alt="">
+        <img src="../img/leaves1.png" class="object" data-value="8" alt="">
+        <img src="../img/leaves2.png" class="object" data-value="-4" alt="">
+        <img src="../img/leaves3.png" class="object" data-value="5" alt="">
+        <img src="../img/leaves4.png" class="object" data-value="-9" alt="">
+      </div>
+    </div>
+  </section>
+  <!-- fin navbar -->
+  <section>
+    <div class="container">
+      <!-- Start Carousel -->
+      <div id="carousel-tarjetas" class="carousel">
+        <div class="item-1 tarj-partner">
+          <figure class="image is-64x64">
+            <img src="../img/cuatrovientos-gris.png" alt="CI Cuatrovientos">
+          </figure>
+        </div>
+        <div class="item-2 tarj-partner">
+          <figure class="image is-64x64">
+            <img src="../img/htl-wolfsberg-gris.png" alt="HTL WOLFSBERG">
+          </figure>
+        </div>
+        <div class="item-3 tarj-partner">
+          <figure class="image is-64x64">
+            <img src="../img/max-valier-gris.png" alt="MAX VALIER">
+          </figure>
+        </div>
+        <div class="item-4 tarj-partner">
+          <figure class="image is-64x64">
+            <img src="../img/cenifer-gris.png" alt="Cenifer">
+          </figure>
+        </div>
+        <div class="item-5 tarj-partner">
+          <figure class="image is-64x64">
+            <img src="../img/goranssonska-skolan-gris.png" alt="Goranssonska skolan">
+          </figure>
+        </div>
+        <div class="item-6 tarj-partner">
+          <figure class="image is-64x64">
+            <img src="../img/stenum-gris.png" alt="Stenum">
+          </figure>
         </div>
       </div>
-      <div class="container">
-        <div class="columns">
-          <div class="column is-4">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img src="../img/d1.png" alt="Placeholder image" />
-                </figure>
-                <div class="packages-caption">
-                  <div class="vertical-align has-background-primary">
-                    <a href="">Lorem Ipsum is simply</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="column is-4">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img src="../img/d2.png" alt="Placeholder image" />
-                </figure>
-                <div class="packages-caption">
-                  <div class="vertical-align has-background-primary">
-                    <a href="">Lorem Ipsum is simply</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="column is-4">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img src="../img/d3.png" alt="Placeholder image" />
-                </figure>
-                <div class="packages-caption">
-                  <div class="vertical-align has-background-primary">
-                    <a href="">Lorem Ipsum is simply</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="columns">
-          <div class="column is-4">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img src="../img/d4.png" alt="Placeholder image" />
-                </figure>
-                <div class="packages-caption">
-                  <div class="vertical-align has-background-primary">
-                    <a href="">Lorem Ipsum is simply</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="column is-4">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img src="../img/d5.png" alt="Placeholder image" />
-                </figure>
-                <div class="packages-caption">
-                  <div class="vertical-align has-background-primary">
-                    <a href="">Lorem Ipsum is simply</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="column is-4">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img src="../img/d6.png" alt="Placeholder image" />
-                </figure>
-                <div class="packages-caption">
-                  <div class="vertical-align has-background-primary">
-                    <a href="">Lorem Ipsum is simply</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <!-- End Carousel -->
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+  <script src="../js/carousel.js"></script>
+  <section id="objetivos-section">
+    <div class="container has-text-centered">
+      <div class="column is-8 is-offset-2">
+        <h2 class="title">Objetivos</h2>
       </div>
-    </section>
+    </div>
+    <div class="content-wrapper ">
+      <div class="columns is-multiline icon-list">
+        <div class="column is-3">
+          <div class="feature-icon has-text-centered">
+            <div class="icon-wrap">
+              <i class="fa-solid fa-calculator fa-2x"></i>
+            </div>
+            <h4>Carbon Footprint Calculation</h4>
+            <p>Train students and staff in Carbon Footprint calculation.</p>
+          </div>
+        </div>
+        <div class="column is-3">
+          <div class="feature-icon has-text-centered">
+            <div class="icon-wrap  ">
+              <img src="../img/co2-reduction-black.png" alt="co2" />
+            </div>
+            <h4>Emissions Reduction</h4>
+            <p> Reduce 30% of school emissions</p>
+          </div>
+        </div>
+        <div class="column is-3">
+          <div class="feature-icon has-text-centered">
+            <div class="icon-wrap">
+              <i class="fa-solid fa-tree fa-2x"></i>
+            </div>
+            <h4>Students and staff with green skills</h4>
+            <p>Raise school-wide awareness on climate change</p>
+          </div>
+        </div>
+        <div class="column is-3">
+          <div class="feature-icon has-text-centered">
+            <div class="icon-wrap">
+              <i class="fa-solid fa-share fa-2x"></i>
+            </div>
+            <h4>Share good practices</h4>
+            <p>Get students to share good practices at an international level</p>
+          </div>
+        </div>
+        <div class="columns is-mobile">
+          <div class="column is-half is-offset-one-quarter"></div>
+        </div>
+        <div class="columns is-mobile">
+          <div class="column is-three-fifths is-offset-one-fifth"></div>
+        </div>
+        <div class="columns is-mobile">
+          <div class="column is-4 is-offset-8"></div>
+        </div>
+        <div class="columns is-mobile">
+          <div class="column is-4 is-offset-8"></div>
+        </div>
 
-    <section class="section has-background-light is-clipped">
-      <div class="container">
-        <h2 class="title mb-16">FAQs</h2>
-        <div class="mb-4 py-4 pr-10 has-background-white">
-          <div class="columns">
-            <div class="column is-narrow">
-              <div style="height: 100%; width: 1px; border-left: 2px solid #3665F3;"></div>
+        <div class="column is-3">
+          <div class="feature-icon has-text-centered">
+            <div class="icon-wrap ">
+              <i class="fa-solid fa-equals fa-2x"></i>
             </div>
-            <div class="column is-narrow py-6 pl-8 pl-16-tablet pl-28-desktop is-align-self-center">
-              <h2 class="title is-5 mb-0">Sed eget accumsan ipsum. Praesent dignissim?</h2>
-              <p class="is-hidden mt-8 has-mw-2xl has-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod orci sed tristique placerat. Fusce in ligula urna. Fusce eget nunc et libero accumsan rutrum quis nec lectus. Quisque luctus sem nibh, quis ornare neque consectetur varius. Maecenas rhoncus consectetur rutrum.</p>
-            </div>
-            <div class="column ml-auto is-narrow">
-              <button class="button is-ghost">
-                <svg width="18" height="10" viewbox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M16.0185 0.201172C16.2905 -0.0668276 16.7275 -0.0668276 16.9975 0.201172C17.2675 0.469172 17.2685 0.902172 16.9975 1.17017L9.0895 9.00017C8.8195 9.26817 8.3825 9.26817 8.1105 9.00017L0.2025 1.17017C-0.0674999 0.902172 -0.0674999 0.469172 0.2025 0.201172C0.4735 -0.0668278 0.9115 -0.0668278 1.1815 0.201172L8.6005 7.34217L16.0185 0.201172Z" fill="#1F40FF"></path>
-                </svg>
-              </button>
-            </div>
+            <h4> Social Inclusion And Gender Equality</h4>
+            <p>Involve 100 % of students with special needs in the project</p>
           </div>
         </div>
-        <div class="mb-4 py-4 pr-10 has-background-white">
-          <div class="columns">
-            <div class="column is-narrow">
-              <div style="height: 100%; width: 1px; border-left: 2px solid #3665F3;"></div>
+        <div class="column is-3">
+          <div class="feature-icon has-text-centered">
+            <div class="icon-wrap ">
+              <i class="fa-solid fa-school fa-2x"></i>
             </div>
-            <div class="column is-narrow py-6 pl-8 pl-16-tablet pl-28-desktop is-align-self-center">
-              <h2 class="title is-5 has-text-info mb-0">After curabitur eu laoreet libero eget en vel odio?</h2>
-              <p class="mt-8 has-mw-2xl has-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod orci sed tristique placerat. Fusce in ligula urna. Fusce eget nunc et libero accumsan rutrum quis nec lectus. Quisque luctus sem nibh, quis ornare neque consectetur varius. Maecenas rhoncus consectetur rutrum.</p>
-            </div>
-            <div class="column ml-auto is-narrow">
-              <button class="button is-ghost">
-                <svg width="18" height="10" viewbox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.18072 9C0.90872 9.268 0.471719 9.268 0.201719 9C-0.0682816 8.732 -0.069281 8.299 0.201719 8.031L8.10972 0.201C8.37972 -0.0670004 8.81672 -0.0670004 9.08872 0.201L16.9967 8.031C17.2667 8.299 17.2667 8.732 16.9967 9C16.7257 9.268 16.2877 9.268 16.0177 9L8.59872 1.859L1.18072 9Z" fill="#1F40FF"></path>
-                </svg>
-              </button>
-            </div>
+            <h4>Involve companies and schools</h4>
+            <p>Involve all the students and partners in the project(CF reduction and calculation)</p>
           </div>
         </div>
-        <div class="mb-4 py-4 pr-10 has-background-white">
-          <div class="columns">
-            <div class="column is-narrow">
-              <div style="height: 100%; width: 1px; border-left: 2px solid #3665F3;"></div>
+        <div class="column is-3">
+          <div class="feature-icon has-text-centered">
+            <div class="icon-wrap">
+              <i class="fa-solid fa-scroll fa-2x"></i>
             </div>
-            <div class="column is-narrow py-6 pl-8 pl-16-tablet pl-28-desktop is-align-self-center">
-              <h2 class="title is-5 mb-0">A eget euismod dignissim, felis tortor mollis ultricies turpis eget leo?</h2>
-              <p class="is-hidden mt-8 has-mw-2xl has-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod orci sed tristique placerat. Fusce in ligula urna. Fusce eget nunc et libero accumsan rutrum quis nec lectus. Quisque luctus sem nibh, quis ornare neque consectetur varius. Maecenas rhoncus consectetur rutrum.</p>
-            </div>
-            <div class="column ml-auto is-narrow">
-              <button class="button is-ghost">
-                <svg width="18" height="10" viewbox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M16.0185 0.201172C16.2905 -0.0668276 16.7275 -0.0668276 16.9975 0.201172C17.2675 0.469172 17.2685 0.902172 16.9975 1.17017L9.0895 9.00017C8.8195 9.26817 8.3825 9.26817 8.1105 9.00017L0.2025 1.17017C-0.0674999 0.902172 -0.0674999 0.469172 0.2025 0.201172C0.4735 -0.0668278 0.9115 -0.0668278 1.1815 0.201172L8.6005 7.34217L16.0185 0.201172Z" fill="#1F40FF"></path>
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="mb-4 py-4 pr-10 has-background-white">
-          <div class="columns">
-            <div class="column is-narrow">
-              <div style="height: 100%; width: 1px; border-left: 2px solid #3665F3;"></div>
-            </div>
-            <div class="column is-narrow py-6 pl-8 pl-16-tablet pl-28-desktop is-align-self-center">
-              <h2 class="title is-5 mb-0">Curabitur elementum eu metus ut consequat?</h2>
-              <p class="is-hidden mt-8 has-mw-2xl has-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod orci sed tristique placerat. Fusce in ligula urna. Fusce eget nunc et libero accumsan rutrum quis nec lectus. Quisque luctus sem nibh, quis ornare neque consectetur varius. Maecenas rhoncus consectetur rutrum.</p>
-            </div>
-            <div class="column ml-auto is-narrow">
-              <button class="button is-ghost">
-                <svg width="18" height="10" viewbox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M16.0185 0.201172C16.2905 -0.0668276 16.7275 -0.0668276 16.9975 0.201172C17.2675 0.469172 17.2685 0.902172 16.9975 1.17017L9.0895 9.00017C8.8195 9.26817 8.3825 9.26817 8.1105 9.00017L0.2025 1.17017C-0.0674999 0.902172 -0.0674999 0.469172 0.2025 0.201172C0.4735 -0.0668278 0.9115 -0.0668278 1.1815 0.201172L8.6005 7.34217L16.0185 0.201172Z" fill="#1F40FF"></path>
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="mt-20 has-text-centered"><a class="button is-info" href="#">More</a></div>
-      </div>
-    </section>
-    <section id="contact-section">
-      <div class="container">
-        <div class="columns">
-          <div class="container">
-            <h4 class="has-text-grey-dark">Partner's locations</h4>
-            <!-- <iframe src="https://www.google.com/maps/d/embed?mid=1DCWb8FQI330-T-gLes5XR1CEKQrjZOZd&ehbc=2E312F"></iframe> -->
-            <iframe id="partnersMap" src="https://www.google.com/maps/d/embed?mid=1DCWb8FQI330-T-gLes5XR1CEKQrjZOZd&ehbc=2E312F"></iframe>
-          </div>
-          <div class="is-4 is-paddingless">
-            <img src="../img/erasmus.png"/>
+            <h4>New policies and plans</h4>
+            <p>Design school environmental policies and sustainability plans</p>
           </div>
         </div>
       </div>
-    </section>
-    <footer>
-      <div class="container">
-        <div class="columns has-text-grey-dark">
-          <div class="column is-6">
-            <p>Developed by: </p>
-          </div>
-          <div class="column is-8">
-            <ul class="footermenu is-pulled-right">
-              <li class="is-border-right">Loreanny Santos</li>
-              <li class="is-border-right">Álvaro Rodriguez</li>
-              <li class="is-border-right">Juan Hidalgo</li>
-              <li>Mario Herrero</li>
-            </ul>
-          </div>
+    </div>
+  </section>
+
+  <section id="destination-section" class=" has-background-primary">
+    <div class="container has-text-centered">
+      <div class="column is-8 is-offset-2">
+        <h2 class="title">Go to Form</h2>
+        <button class="btn draw-border" onclick="window.location.href = '../html/formulario.html'">Pulse</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="ods-section">
+    <div class="container has-text-centered">
+      <h2 class="title">OUR SDGs</h2>
+      <div class="columns">
+        <div class="column">
+          <a href="https://sdgs.un.org/goals/goal7" target="_blank"><img src="../img/7.png" alt="sdgs7"></a>
+        </div>
+        <div class="column">
+          <a href="https://sdgs.un.org/goals/goal11" target="_blank"><img src="../img/11.png" alt="sdgs11"></a>
+        </div>
+        <div class="column">
+          <a href="https://sdgs.un.org/goals/goal12" target="_blank"><img src="../img/12.png" alt="sdgs12"></a>
+        </div>
+        <div class="column">
+          <a href="https://sdgs.un.org/goals/goal13" target="_blank"><img src="../img/13.png" alt="sdgs13"></a>
+        </div>
+        <div class="column">
+          <a href="https://sdgs.un.org/goals/goal17" target="_blank"><img src="../img/17.png" alt="sdgs17"></a>
         </div>
       </div>
-    </footer>
-    <script type="text/javascript" src="../js/main.js"></script>
-  </body>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <h2 class="faq-heading title has-text-centered has-background-white-bis">FAQ'S</h2>
+  <section class="faq-container has-background-white-bis">
+    <div class="faq-one">
+      <!-- faq question -->
+      <h1 class="faq-page">WHAT IS THE OBJECTIVE OF THE PROJECT?</h1>
+      <!-- faq answer -->
+      <div class="faq-body">
+        <p>The main objective is to train future professionals who are studying Degrees of
+          Vocational Training in the area of ​​sustainability, taking as a point of reference the
+          calculation and reduction of the carbon footprint.</p>
+      </div>
+    </div>
+    <hr class="hr-line">
+    <div class="faq-two">
+      <!-- faq question -->
+      <h1 class="faq-page">WHAT ARE THE SPECIFIC OBJECTIVES OF THE PROJECT?</h1>
+      <!-- faq answer -->
+      <div class="faq-body">
+        <p>There are 7 main goals:<br>
+          • Train students and teachers in calculating the carbon footprint.<br>
+          • Reduce CO2 emissions from academic centers by 30%.<br>
+          • Inculcate 'green skills' and make the academic environment aware, both
+          teachers and students, of the concept of climate change (its causes,
+          consequences and actions we can take to help stop it).<br>
+          • Exchange of good practices between educational centers (especially between
+          students) internationally.<br>
+          • Social and gender inclusion involving 100% of the students, with and without
+          special needs.<br>
+          • Involve all partners and related companies in the most important activities
+          important on calculation and reduction of carbon coal.<br>
+          • Design new environmental policies and sustainability plans in the centers
+          academics</p>
+      </div>
+    </div>
+    <hr class="hr-line">
+    <div class="faq-three">
+      <!-- faq question -->
+      <h1 class="faq-page">HOW LONG DOES THE PROJECT LAST?</h1>
+      <!-- faq answer -->
+      <div class="faq-body">
+        <p>The project has an initial duration of 2 years and 3 months: September 2020- December 2022.
+          Due to the pandemic, an extension has been requested and the project will end in April 2023.</p>
+      </div>
+    </div>
+    <hr class="hr-line">
+    <div class="faq-four">
+      <!-- faq question -->
+      <h1 class="faq-page">HOW MANY PARTNERS PARTICIPATE?</h1>
+      <!-- faq answer -->
+      <div class="faq-body">
+        <p>The project is directed by the Cuatrovientos Integrated Center and is also made up of
+          educational centres: CENIFER (Higher Integrated Center for Renewable Energies),
+          Technologische Fachoberschule Bozen, HTBLA Wolfsberg, Göranssonska Skolan and the consultancy
+          STENUM Unternehmensberatung und Forschungsgesellschaft fur Umweltfragen MBH</p>
+      </div>
+    </div>
+    <hr class="hr-line">
+    <div class="faq-five">
+      <!-- faq question -->
+      <h1 class="faq-page">WHERE ARE THE PARTICIPATING PARTNERS FROM?</h1>
+      <!-- faq answer -->
+      <div class="faq-body">
+        <p>2 Spanish partners: CI CUATROVIENTOS AND CENIFER, based in Pamplona (Navarra).
+          1 Italian partner: Technologische Fachoberschule Bozen, based in Bozen (Alto Adige – Tyrol
+          South)
+          2 Austrian partners: HTBLA Wolfsberg, based in Wolfsberg (Kärnten) and STENUM, based
+          in Graz (Steiermark)
+          1 Swedish partner: Göranssonska Skolan, based in Sandviken (Gävleborgs län)</p>
+      </div>
+    </div>
+    <hr class="hr-line">
+    <div class="faq-six">
+      <!-- faq question -->
+      <h1 class="faq-page">HOW MANY ACTIVITIES HAVE BEEN CARRIED OUT?</h1>
+      <!-- faq answer -->
+      <div class="faq-body">
+        <p>Each partner has developed different activities. Some examples are: conferences
+          awareness, studies of energy efficiency in educational centers, installation of
+          solar panels, tree planting, calculator to calculate the CO2 consumption of the
+          centers, mobile application for calculating digital CO2 consumption at the academic level,
+          meetings with specialized companies</p>
+      </div>
+    </div>
+    <hr class="hr-line">
+    <div class="faq-seven">
+      <!-- faq question -->
+      <h1 class="faq-page">ARE THE SDGS WORKED?</h1>
+      <!-- faq answer -->
+      <div class="faq-body">
+        <p>Yes, CF Train in VET works on the SDGs:<br>
+          • 7 - Guarantee access to affordable, reliable, sustainable and modern energy for
+          everyone<br>
+          • 11 – Make cities and human settlements inclusive, safe,
+          resilient and sustainable<br>
+          • 12 – Ensuring sustainable consumption and production patterns<br>
+          • 13 – Adopt urgent measures to combat climate change and its effects<br>
+          • 17 – Strengthen the means of implementation and revitalize the Global Partnership for
+          Sustainable development</p>
+      </div>
+    </div>
+    <hr class="hr-line">
+    <div class="faq-eigth">
+      <!-- faq question -->
+      <h1 class="faq-page">CAN I CONTACT A PARTICIPATING PARTNER TO REQUEST INFORMATION?</h1>
+      <!-- faq answer -->
+      <div class="faq-body">
+        <p>You can contact CI CUATROVIENTOS:<br>
+          Phone: (34) 948 12 41 29<br>
+          <a href="mailto:info@cuatrovientos.org">info@cuatrovientos.org (Subject CF Train in VET Project)<br>
+            <a href="http://www.cuatrovientos.org/">http://www.cuatrovientos.org/</a>
+        </p>
+      </div>
+    </div>
+    <hr class="hr-line">
+    <div class="faq-nine">
+      <!-- faq question -->
+      <h1 class="faq-page">WHAT KIND OF ERASMUS+ PROJECT IS CF TRAIN IN VET?</h1>
+      <!-- faq answer -->
+      <div class="faq-body">
+        <p>The project is part of the Erasmus+ Program, Key Action: Cooperation for innovation
+          and the exchange of good practices, Action Type: Strategic Partnerships for vocational
+          education and training.
+          You can check all the information on the web: <a
+            href="https://erasmusplus.ec.europa.eu/projects/eplus-project-details#project/2020-1-ES01-KA202-081865">https://erasmusplus.ec.europa.eu/projects/eplus-project-details#project/2020-1-ES01-KA202-081865</a>
+        </p>
+      </div>
+    </div>
+    <hr class="hr-line">
+    <div class="faq-ten">
+      <!-- faq question -->
+      <h1 class="faq-page">WHAT IS THE AMOUNT OF THE PROJECT SUBSIDIZED BY ERASMUS+?</h1>
+      <!-- faq answer -->
+      <div class="faq-body">
+        <p>116.998€</p>
+      </div>
+    </div>
+
+  </section>
+  <!-- final FAQ -->
+
+  <section id="contact-section">
+    <div class="container">
+      <div class="columns">
+        <div id="divMapa" class="container">
+          <h4 class="has-text-grey-dark">Partner's locations</h4>
+          <!-- <iframe src="https://www.google.com/maps/d/embed?mid=1DCWb8FQI330-T-gLes5XR1CEKQrjZOZd&ehbc=2E312F"></iframe> -->
+          <iframe id="partnersMap"
+            src="https://www.google.com/maps/d/embed?mid=1DCWb8FQI330-T-gLes5XR1CEKQrjZOZd&ehbc=2E312F"></iframe>
+        </div>
+        <div id="fotoerasmus" class="is-4 is-paddingless">
+          <img src="../img/erasmus.png" alt="logoErasmus" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="content">
+      <div class="columns has-text-grey-dark">
+        <div class="column is-6">
+          <p>Developed by: </p>
+        </div>
+        <div class="column is-6">
+          <ul class="footermenu is-pulled-right">
+            <li class="is-border-right">Loreanny Santos</li>
+            <li class="is-border-right">Álvaro Rodriguez</li>
+            <li class="is-border-right">Juan Hidalgo</li>
+            <li>Mario Herrero</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/faqs.js"></script>
+</body>
+
 </html>

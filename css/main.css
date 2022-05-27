@@ -16,6 +16,24 @@
   font-style: normal;
 }
 
+/*Carousel*/
+.tarj-partner {
+  margin-left: -20px
+}
+/*Fin carousel*/
+
+/*Form*/
+#resultado {
+  color: black !important; 
+  font-size: 200%;
+}
+
+ #titulo-form {
+  color: black !important; 
+  font-size: 400%; 
+ }
+/*Fin form*/
+
 /* objetivos */
 .content-wrapper {
   padding: 60px 0;
@@ -39,10 +57,9 @@
   align-items: center;
   margin: 0 auto 10px auto;
   color: #000;  
-  transition: margin-top 0.2s ease-in-out;
 }
-.icon-wrap:hover{
-  margin-top: -2 !important;
+ .icon-wrap:hover {
+  margin-top: -4px !important;
 }
 .icon-inner, .ionicon, svg {
   display: block;
@@ -69,10 +86,89 @@ h4{
   height: 100% !important;
   object-fit: contain !important;
 }
-.partnersMap {
-height: 40%;
-width: 500px;
+
+  /*Footer*/
+  #fotoerasmus {
+  margin-top: 20%;
+  }
+  #partnersMap {
+  min-width: 80%;
+  min-height: 150%;
+  }
+  #divMapa {
+  margin-bottom: 10%;
+  }
+  /*fin Footer*/ 
+  
+  
+/*FAQs*/
+
+
+.faq-heading{
+  border-bottom: #777;
+  padding: 20px 60px;
 }
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+.hr-line{
+width: 60%;
+margin: auto;
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+  /* background-color: #eee; */
+  color: #444;
+  cursor: pointer;
+  padding: 30px 20px;
+  width: 60%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin: auto;
+}
+.faq-body{
+  margin: auto;
+  /* text-align: center; */
+ width: 50%; 
+ padding: auto;
+ 
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-page:hover {
+  background-color: #ebbd15;
+}
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+  border-left: solid 2px white;
+  border-right: solid 2px white;
+  padding: 0 18px;
+  background-color: #ffffff;
+  display: none;
+  overflow: hidden;
+  color: #000;
+}
+.faq-page:after {
+  content: '\02795';
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
+}
+
+
+/*Fin FAQs*/
+
+
+
 
 
 
@@ -100,6 +196,165 @@ width: 500px;
   display: none !important;
 }
 /*Fin carousel*/
+
+ 
+
+
+.containerparallax{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+}
+
+.containerparallax img{
+  width: 10%;
+  height: 10%;
+  top: 10;
+  left: 10;
+  position: relative;
+}
+
+.containerparallax h1{
+  z-index: 3;
+  position: absolute;
+  color: #fff;
+  font-size: 90px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 32px;
+  line-height: 60px;
+}
+
+.containerparallax h1 span{
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: 10px;
+}
+
+@media (max-width:800px){
+  .containerparallax h1{
+    font-size: 60px;
+    letter-spacing: 19px;
+    line-height: 35px;
+  }
+
+  .containerparallax h1 span{
+    font-size: 26px;
+  }
+} 
+
+/* btnFrm */
+
+.draw-border {
+  box-shadow: inset 0 0 0 4px #ffffff;
+  color: #ffffff;
+  transition: color 0.25s 0.0833333333s;
+  position: relative;
+}
+.draw-border::before, .draw-border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+.draw-border::before {
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+}
+.draw-border::after {
+  border-top-width: 4px;
+  border-right-width: 4px;
+}
+.draw-border:hover {
+  color:  #fcc362;
+}
+.draw-border:hover::before, .draw-border:hover::after {
+  border-color:  #fcc362;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+.draw-border:hover::before {
+  transition-delay: 0s, 0s, 0.25s;
+}
+.draw-border:hover::after {
+  transition-delay: 0s, 0.25s, 0s;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem "Roboto Slab", sans-serif;
+  padding: 1em 2em;
+  letter-spacing: 0.05rem;
+}
+.btn:focus {
+  outline: 2px dotted #ffffff;
+}
+
+
+
+
+.slider {
+  width: 5%;
+  margin: 5% auto;
+}
+
+input[type="range"] {
+  -webkit-appearance: none !important;
+  width: 100%;
+  height: 15px;
+  background-color: #A3CD99;
+  border: 1px solid #97c68b;
+  border-radius: 10px;
+  margin: auto;
+  transition: all 0.3s ease;
+}
+input[type="range"]:hover {
+  background-color: #b2d5aa;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  width: 20px;
+  height: 20px;
+  background-color: #579E81;
+  border-radius: 30px;
+  box-shadow: 0px 0px 3px #3c6d59;
+  transition: all 0.5s ease;
+}
+input[type="range"]::-webkit-slider-thumb:hover {
+  background-color: #457d66;
+}
+input[type="range"]::-webkit-slider-thumb:active {
+  box-shadow: 0px 0px 1px #3c6d59;
+}
+
+#rangevalue {
+  text-align: center;
+  font-family: "Quantico", sans-serif;
+  font-size: 18px;
+  display: block;
+  margin: auto;
+  padding: 10px 0px;
+  width: 100%;
+  color: #579E81;
+}
+
+
+
+
 
 
 
@@ -2841,15 +3096,15 @@ pre {
   font-family: monospace;
 }
 body {
-  color: #4a4a4a;
+  color: #000000;
   font-size: 1em;
   font-weight: 400;
   line-height: 1.5;
-  /* background-image: url(../img/); */
+  /* background-ima#976b30(../img/); */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color:#2ce28a;
+  background-color:#ffffff;
 }
 a {
   color: #ffa200;
@@ -3350,7 +3605,7 @@ a.has-text-primary:focus {
   color: #cc8200 !important;
 }
 .has-background-primary {
-  background-color: #ffa200 !important;
+  background-color: #82652f !important;
 }
 .has-text-link {
   color: #ffa200 !important;
@@ -3869,9 +4124,8 @@ a.box:active {
   box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2), 0 0 0 1px #ffa200;
 }
 .button {
-  background-color: #fff;
-  border-color: #dbdbdb;
   border-width: 1px;
+  display: none;
   color: #363636;
   cursor: pointer;
   justify-content: center;
@@ -3879,13 +4133,18 @@ a.box:active {
   padding-left: 0.75em;
   padding-right: 0.75em;
   padding-top: calc(0.375em - 1px);
+ position: fixed;
+ bottom:  20px;
+ right: 30px;
+ z-index: 5px;
   text-align: center;
   white-space: nowrap;
 }
+
 .button strong {
   color: inherit;
 }
-.button .icon,
+.button .icon,.button
 .button .icon.is-small,
 .button .icon.is-medium,
 .button .icon.is-large {
@@ -5029,9 +5288,10 @@ fieldset[disabled] .button {
   pointer-events: none;
 }
 .button.is-rounded {
-  border-radius: 290486px;
-  padding-left: 1em;
-  padding-right: 1em;
+  border-radius: 50%;
+  width: 40px;
+height: 40px;
+
 }
 .buttons {
   align-items: center;
@@ -13036,7 +13296,6 @@ label.panel-block:hover {
 #objetivos-section {
   padding-top: 75px;
   padding-bottom: 75px;
-  margin-top: -100px;
   background-color: #fff;
 }
 #objetivos-section .title {
@@ -13132,18 +13391,18 @@ label.panel-block:hover {
 #destination-section .button {
   padding: 0 20px 0 20px;
 }
-#packages-section {
+#form-section {
   padding-top: 75px;
   padding-bottom: 75px;
   background-color: white;
 }
-#packages-section p {
+#form-section p {
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
   color: #464646;
 }
-#packages-section .packages-caption .vertical-align {
+#form-section .form-caption .vertical-align {
   position: absolute;
   top: 41%;
   right: 0px;
@@ -13154,12 +13413,12 @@ label.panel-block:hover {
   border-bottom-left-radius: 4px;
   border-top-left-radius: 4px;
 }
-#packages-section .packages-caption .vertical-align a {
+#form-section .form-caption .vertical-align a {
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
 }
-#packages-section .packages-caption .vertical-align a:hover {
+#form-section .form-caption .vertical-align a:hover {
   color: white;
 }
 #counter-section {
@@ -13268,18 +13527,12 @@ footer .footermenu li {
 footer .footermenu li a {
   color: #464646;
 }
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+body, h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
   color: white;
 }
 a {
-  color: white;
+  color:white;
 }
 a:hover {
   color: #ffa200;

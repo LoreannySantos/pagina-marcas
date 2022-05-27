@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/main.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <title>Formulario</title>
+</head>
+
+<body class="has-background-white-bis">
+
+  <button id="btnTop" class="button is-rounded is-link">^</button>
+  <!-- navbar -->
+  <section class="hero is-fullheight ">
+    <div class="hero-head">
+      <nav class="navbar has-background-primary">
+          <div class="container">
+              <div class="navbar-brand">
+                  <a class="navbar-item" href="index.html">
+                      <figure class="image">
+                          <img src="../img/LogoCFTrainInVET(Personalizado)(1).png" alt="Logo" />
+                      </figure>
+                  </a>
+                  <span class="navbar-burger burger " data-target="navbarMenu">
+                      <span></span><span></span><span></span></span>
+              </div>
+              <div id="navbarMenu" class="navbar-menu ">
+                  <div class="navbar-end ">
+                      <span class="navbar-item "><a href="index.html">Home</a></span>
+                      <span class="navbar-item"><a href="partners.html">Partners</a></span>
+                      <span class="navbar-item"><a href="activities.html">Activities</a></span>
+                  </div>
+              </div>
+          </div>
+      </nav>
+  </div>
+
+
+  <div class="container has-text-centered">
+    <div class="column is-8 is-offset-2">
+      <h1 class="title has-text-white"id="titulo-form">
+        ¿Cuán ecológico eres?
+      </h1>
+      <input type="text" id="txtNombre" placeholder="Introduce tu nombre">
+      <input type="date" id="dtpNac">
+    </div>
+  </div>
+
+  <div class="columns body-columns has-background-white-bis">
+    <div class="column is-half is-offset-one-quarter">
+
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="../img/lavarse-dientes.jpg" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="content">
+            Cuando te lavas los dientes…
+          </div>
+          <div class="container ">
+            <label class="radio">
+              <input type="radio" id="2" name="preg1">
+              Siempre cierro el grifo.
+            </label>
+            <br>
+            <label class="radio">
+              <input type="radio" id="1" name="preg1">
+              A veces se me olvida cerrar el grifo.
+            </label>
+            <br>
+            <label class="radio">
+              <input type="radio" id="0" name="preg1">
+              Nunca cierro el grifo.
+            </label>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="../img/comprar-tienda.jpg" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="content">
+            A la hora de hacer la compra…
+          </div>
+          <div class="container ">
+            <label class="radio">
+              <input type="radio" id="2" name="preg2">
+              Siempre llevo mis bolsas de tela.
+            </label>
+            <br>
+            <label class="radio">
+              <input type="radio" id="1" name="preg2">
+              Uso bolsas de plástico de la tienda, pero las reutilizo en casa.
+            </label>
+            <br>
+            <label class="radio">
+              <input type="radio" id="0" name="preg2">
+              Uso las bolsas de plástico de la tienda y las tiro a la basura.
+            </label>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="../img/basura-calle.JPG" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="content">
+            Cuando ves basura en la calle…
+          </div>
+          <div class="container ">
+            <label class="radio">
+              <input type="radio" id="2" name="preg3">
+              La tiro a la basura.
+            </label>
+            <br>
+            <label class="radio">
+              <input type="radio" id="1" name="preg3">
+              Le pego una patada para que no estorbe.
+            </label>
+            <br>
+            <label class="radio">
+              <input type="radio" id="0" name="preg3">
+              La dejo ahí, no es mi problema.
+            </label>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="../img/bote-mermelada.jpg" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="content">
+            Cuando se termina la mermelada…
+          </div>
+          <div class="container ">
+            <label class="radio">
+              <input type="radio" id="2" name="preg4">
+              Llevo el bote a un centro de reciclaje.
+            </label>
+            <br>
+            <label class="radio">
+              <input type="radio" id="1" name="preg4">
+              Uso el bote para guardar cosas.
+            </label>
+            <br>
+            <label class="radio">
+              <input type="radio" id="0" name="preg4">
+              Tiro el bote, no lo necesito.
+            </label>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="../img/interruptor-luz.jpg" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="content">
+            Las luces de la casa…
+          </div>
+          <div class="container ">
+            <label class="radio">
+              <input type="radio" id="2" name="preg5">
+              Las apago al salir de la habitación.
+            </label>
+            <br>
+            <label class="radio">
+              <input type="radio" id="1" name="preg5">
+              A veces se me olvida apagarlas.
+            </label>
+            <br>
+            <label class="radio">
+              <input type="radio" id="0" name="preg5">
+              Siempre dejo una lucecita encendida a la noche.
+            </label>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="../img/duchandose.png" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="content">
+            A la hora de ducharte…
+          </div>
+          <div class="container ">
+            <label class="radio">
+              <input type="radio" id="2" name="preg6">
+              Cierro y abro intermitentemente la ducha mientras me baño.
+            </label>
+            <br>
+            <label class="radio">
+              <input type="radio" id="1" name="preg6">
+              Tardo poco y recolecto todo el agua que puedo para usarla en otras tareas.
+            </label>
+            <br>
+            <label class="radio">
+              <input type="radio" id="0" name="preg6">
+              Suelo tardar mucho y dejo siempre abierta la ducha.
+            </label>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="../img/bus.jpg" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="content">
+            ¿Qué medio de transporte usas con mayor frecuencia?
+          </div>
+          <div class="container ">
+            <label class="radio">
+              <input type="radio" id="2" name="preg7">
+              Suelo caminar o ir en bici.
+            </label>
+            <br>
+            <label class="radio">
+              <input type="radio" id="1" name="preg7">
+              Suelo ir en transporte público.
+            </label>
+            <br>
+            <label class="radio">
+              <input type="radio" id="0" name="preg7">
+              Siempre uso el coche.
+            </label>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="../img/reciclar.jpg" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="content">
+            ¿Separas la basura en tu casa?
+          </div>
+          <div class="container ">
+            <label class="radio">
+              <input type="radio" id="2" name="preg8">
+              Sí, en mi casa toda la basura se separa.
+            </label>
+            <br>
+            <label class="radio">
+              <input type="radio" id="1" name="preg8">
+              Trato de separar, pero a veces se me olvida.
+            </label>
+            <br>
+            <label class="radio">
+              <input type="radio" id="0" name="preg8">
+              No, yo tiro todo en el mismo sitio.
+            </label>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="../img/plantas.jpg" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="content">
+            Si ves que una planta se muere…
+          </div>
+          <div class="container ">
+            <label class="radio">
+              <input type="radio" id="2" name="preg9">
+              La uso de compost para plantar una nueva.
+            </label>
+            <br>
+            <label class="radio">
+              <input type="radio" id="1" name="preg9">
+              Intento que reviva.
+            </label>
+            <br>
+            <label class="radio">
+              <input type="radio" id="0" name="preg9">
+              La dejo ahí, ¡Cuidar plantas no es lo mío!
+            </label>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="../img/eco.jpg" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="content">
+            Los productos ecológicos…
+            <br>
+            0-4 Son puro marketing.
+            <br>
+            5-7 Los consumo poco.
+            <br>
+            8-10 Muy importantes.
+          </div>
+          <div class="container">
+            <div class="slider">
+                <input type="range" min="0" max="10" id="slider" onchange="rangevalue.value=value" />
+                <output id="rangevalue">5</output>
+            </div>
+        </div>
+        </div>
+      </div>
+      <br>
+    </div>
+  </div>
+  <div class="container has-text-centered">
+    <div class="column is-8 is-offset-2">
+      <p class="content p-b-25 m-b-25" id="resultado"></p>
+    </div>
+    <button class="btn btn-primary btn-pulse" id="btnForm"> Enviar </button>
+  </div>
+  <script src="../js/form.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

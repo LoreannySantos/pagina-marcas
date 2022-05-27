@@ -2,45 +2,197 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="../css/main.css" rel="stylesheet" /> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/> 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link href="../css/main.css" rel="stylesheet" />
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+  <script type="text/javascript" src="../js/main.js"></script>
+
 </head>
+
 <body>
-    <div class="hero-body" id="banner">
-      <div class="container has-text-centered"></div>
-          <div class="column is-10 is-offset-1">
-              <ul>
-                <li class="layer" data-speed="2"> <img src="../img/leaves1.png" alt=""></li>
-                <li class="layer" data-speed="-4"><img src="../img/leaves2.png" alt=""></li>
-                <li class="layer" data-speed="3"><img src="../img/leaves3.png" alt=""></li>
-                <li class="layer" data-speed="5"><img src="../img/leaves4.png" alt=""></li>  
-              </ul>
-              
-              <h1 class="title has-text-white">
-              Cf <span class="has-text-primary">TRAIN</span> in  Vet
-            </h1>
-            <p class="subtitle has-text-white">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's
-            </p>
+  <section id="form-section">
+    <div class="container has-text-centered p-b-25">
+      <div class="column is-8 is-offset-2">
+        <h2 class="title">OUR form</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="columns">
+        <div class="column is-4">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="../img/d1.png" alt="Placeholder image" />
+              </figure>
+              <div class="form-caption">
+                <div class="vertical-align has-background-primary">
+                  <a href="">Lorem Ipsum is simply</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-4">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="../img/d2.png" alt="Placeholder image" />
+              </figure>
+              <div class="form-caption">
+                <div class="vertical-align has-background-primary">
+                  <a href="">Lorem Ipsum is simply</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-4">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="../img/d3.png" alt="Placeholder image" />
+              </figure>
+              <div class="form-caption">
+                <div class="vertical-align has-background-primary">
+                  <a href="">Lorem Ipsum is simply</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-</div>
-<script>
-    document.addEventListener("mousemove", parallax);
-    function parallax(e){
-        this.querySelectorAll('.layer').forEach(layer => {
-          const speed =layer.getAttribute('data-speed')
-            const x =(window.innerWidth-e.pageX*value)/100
-            const y =(window.innerHeight-e.pageY*value)/100
-            layer.style.transform=`translateX(${x}) translateY(${y})`
-        });
-    }
-</script>
+      <div class="columns">
+        <div class="column is-4">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="../img/d4.png" alt="Placeholder image" />
+              </figure>
+              <div class="form-caption">
+                <div class="vertical-align has-background-primary">
+                  <a href="">Lorem Ipsum is simply</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-4">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="../img/d5.png" alt="Placeholder image" />
+              </figure>
+              <div class="form-caption">
+                <div class="vertical-align has-background-primary">
+                  <a href="">Lorem Ipsum is simply</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-4">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="../img/d6.png" alt="Placeholder image" />
+              </figure>
+              <div class="form-caption">
+                <div class="vertical-align has-background-primary">
+                  <a href="">Lorem Ipsum is simply</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+   <!-- <div id="carousel-form" class="carousel">
+        <div class="item-1 column">
+            </div>
+            <div class="item-2">
+                <a href="https://sdgs.un.org/goals/goal12" target="_blank"><img src="../img/12.png"></a>
+            </div>
+            <div class="item-3">
+                <a href="https://sdgs.un.org/goals/goal13" target="_blank"><img src="../img/13.png"></a>
+            </div>
+            <div class="item-4">
+                <a href="https://sdgs.un.org/goals/goal17" target="_blank"><img src="../img/17.png"></a>
+            </div>
+            <div class="item-5">
+                <a href="https://sdgs.un.org/goals/goal7" target="_blank"><img src="../img/7.png"></a>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script> -->
+
+  <button class="button is-info is-rounded">Rounded</button>
+
+  <!-- <figure class="image is-square">
+    <img src="https://bulma.io/images/placeholders/256x256.png">
+  </figure> -->
+  <!-- partner card slider desktop -->
+  <section class="section">
+    <div class="container">
+      <!-- Start Carousel -->
+      <div id="carousel-tarjetas" class="carousel">
+        <div class="item-1 tarj-partner">
+          <figure class="image is-64x64">
+          <img src="../img/cuatrovientos-gris.png" alt="CI Cuatrovientos">
+          </figure>
+        </div>
+        <div class="item-2 tarj-partner">
+          <figure class="image is-64x64">
+          <img src="../img/htl-wolfsberg-gris.png" alt="HTL WOLFSBERG">
+          </figure>
+        </div>
+        <div class="item-3 tarj-partner">
+          <figure class="image is-64x64">
+          <img src="../img/max-valier-gris.png" alt="MAX VALIER">
+          </figure>
+        </div>
+        <div class="item-4 tarj-partner">
+          <figure class="image is-64x64">
+          <img src="../img/cenifer-gris.png" alt="Cenifer">
+          </figure>
+        </div>
+        <div class="item-5 tarj-partner">
+          <figure class="image is-64x64">
+          <img src="../img/goranssonska-skolan-gris.png" alt="Goranssonska skolan">
+          </figure>
+        </div>
+        <div class="item-6 tarj-partner">
+          <figure class="image is-64x64">
+          <img src="../img/stenum-gris.png" alt="Stenum">
+          </figure>
+        </div>
+      </div>
+      <!-- End Carousel -->
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script> 
+  <script>
+    bulmaCarousel.attach('#carousel-tarjetas', {
+      slidesToScroll: 1,
+      slidesToShow: 3,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      pagination: false,
+      infinite: true,
+      pauseOnHover: true
+    });
+  </script>
 </body>
+
 </html>

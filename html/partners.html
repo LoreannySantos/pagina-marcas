@@ -1,216 +1,476 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Partners</title>
-    <link href="../css/cssPartners.css" rel="stylesheet" />
-  </head>
-  <body>
-    <!-- navbar -->
-    <section class="hero is-fullheight p-t-70">
-      <div class="hero-head">
-        <nav class="navbar">
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Partners</title>
+  <link href="../css/cssPartners.css" rel="stylesheet" />
+  <link href="../js/partners.js" />
+  <script type="text/javascript" src="../js/main.js"></script>
+</head>
+
+<body>
+  <button id="btnTop" class="button is-rounded is-link">^</button>
+  <!-- navbar -->
+  <section class="hero is-fullheight" id="fondoNav">
+    
+    <div class="hero-head">
+      <nav class="navbar">
           <div class="container">
-            <div class="navbar-brand">
-              <a class="navbar-item" href="../">
-                <figure class="image is-64x64">
-                <img src="../img/LogoCFTrainInVET (Personalizado).png" alt="Logo" /></a>
-              </figure>
-            <span class="navbar-burger burger" data-target="navbarMenu">
-                <span></span><span></span><span></span></span>
-            </div>
-            <div id="navbarMenu" class="navbar-menu">
-              <div class="navbar-end">
-                <span class="navbar-item"><a href="index.html">Home</a></span>
-                <span class="navbar-item"><a href="partners.html">Partners</a></span>
-                <span class="navbar-item"><a href="activities.html">Activities</a></span>
-                <span class="navbar-item"><a href="#" ><span class="icon"><i class="icon-search"></i></span></a>
-                </span>
+              <div class="navbar-brand">
+                  <a class="navbar-item" href="index.html">
+                      <figure class="image">
+                          <img src="../img/LogoCFTrainInVET(Personalizado)(1).png" alt="Logo" />
+                      </figure>
+                  </a>
+                  <span class="navbar-burger burger" data-target="navbarMenu">
+                      <span></span><span></span><span></span></span>
               </div>
-            </div>
+                <div id="navbarMenu" class="navbar-menu">
+                    <div class="navbar-end">
+                      <span class="navbar-item"><a href="index.html">Home</a></span>
+                      <span class="navbar-item"><a href="partners.html">Partners</a></span>
+                      <span class="navbar-item"><a href="activities.html">Activities</a></span>
+                      <span class="navbar-item"><a href="#"><span class="icon"><i
+                                      class="icon-search"></i></span></a>
+                      </span>
+                    </div>
+                </div>
           </div>
-        </nav>
-      </div>
-      <div class="hero-body" id="banner">
+      </nav>
+       <div class="hero-body" id="banner">
         <div class="container has-text-centered">
           <div class="column is-10 is-offset-1">
             <h1 class="title has-text-white">
               Cf <span class="has-text-primary">TRAIN</span> in  Vet
             </h1>
             <p class="subtitle has-text-white">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's
+              Proposed by Cuatrovientos, Max-Valier, Cenifer ,Stenum, Htl-wolfsberg, SandVik, 
+              developed by Juan Hidalgo, Akvaro Rodriguez, Loreanny Santos, Diego Bogo
             </p>
+          </div>
+        </div>
+    </div>
+
+
+
+  <!--Tarjetas-->
+      <!--4vientos-->
+    <section class="fondoPartners">
+      <div id="containerCard1">
+        <div class="column is-4" id="card1">
+          <div class="card has-text-centered">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="../img/cuatrovientos.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img src="../img/../img/cuatrovientos.png" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div>
+                  <p class="title is-4">Cuatrovientos</p>
+                  
+                  <a href="https://twitter.com/_cuatrovientos"><p class="subtitle is-6 is-link">Twitter</p></a>
+                  
+                  <a href="https://www.facebook.com/cipcuatrovientos"><p class="subtitle is-6">faceboock</p></a>
+                  
+                  <a href="info@cuatrovientos.org"><p class="subtitle is-6">mail</p></a>
+                </div>
+              </div>
+
+              <div class="content">
+                cuatrovientos es un centro integrado colavorativo con el medioambinete
+                y comprometido con el mimso , este centro posee un sistema de placas
+                solares para colaborar con la iniciativa StopCo2
+                <br>
+              </div>
+              <footer>
+                <button class="js-modal-trigger" data-target="idDelModal">
+                  Mas info
+                </button> 
+                <div id="idDelModal" class="modal">
+                  <div class="modal-background"></div>
+            
+                  <div class="modal-content">
+                    <div class="box">
+                      <p>Cuatrovientos</p>
+                      Cuatrovientos es un centro integrado colavorativo con el medioambinete
+                      y comprometido con el mimso , este centro posee un sistema de placas
+                      solares para colaborar con la iniciativa StopCo2.
+                      Su iniciativa del año x fue el plantar arbles para
+                      paliar y contrarestar las emisiones del centro ,
+                      el objetivo
+                    </div>
+                  </div>
+            
+                  <button class="modal-close " aria-label="close">
+                    Close
+                  </button>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal -->
+      <!--Max-Valier-->
+      <div class="column is-4" id="card2">
+        <div class="card has-text-centered">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="../img/max-valier-gris.png" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img src="../img/../img/max-valier-gris.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div>
+                <p class="title is-4">Max-Valier</p>
+                
+                <a href="#"><p class="subtitle is-6">twitter</p></a>
+                
+                <a href="#"><p class="subtitle is-6">faceboock</p></a>
+                
+                <a href="#"><p class="subtitle is-6">mail</p></a>
+              </div>
+            </div>
+
+            <div class="content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus nec iaculis mauris.
+              <br>
+            </div>
+            <footer>
+              <button class="js-modal-trigger" data-target="idDelModal">
+                Mas info
+              </button>
+
+              <!-- modal -->
+              <div id="idDelModal" class="modal">
+                <div class="modal-background"></div>
+
+                <div class="modal-content">
+                  <div class="box">
+                    <p>MaxValier</p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi,
+                    dignissimos et consectetur velit eius illo deleniti ipsa libero,
+                    ea dicta atque sequi beatae error iure at accusantium enim! Officia, adipisci.
+                  </div>
+                </div>
+
+                <button class="modal-close " aria-label="close">
+                  Close
+                </button>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <!--Stenum-->
+      <div id="containerCard1">
+        <div class="column is-4" id="card1">
+          <div class="card has-text-centered">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="../img/stenum-gris.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img src="../img/../img/stenum-gris.png" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div>
+                  <p class="title is-4">Stenum</p>
+                  
+                  <a href="#"><p class="subtitle is-6">twitter</p></a>
+                  
+                  <a href="#"><p class="subtitle is-6">faceboock</p></a>
+                  
+                  <a href="#"><p class="subtitle is-6">mail</p></a>
+                </div>
+              </div>
+
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
+                <br>
+              </div>
+              <footer>
+                <button class="js-modal-trigger" data-target="idDelModal">
+                  Mas info
+                </button>
+
+                <!-- modal -->
+                <div id="idDelModal" class="modal">
+                  <div class="modal-background"></div>
+
+                  <div class="modal-content">
+                    <div class="box">
+                      <p>MaxValier</p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi,
+                      dignissimos et consectetur velit eius illo deleniti ipsa libero,
+                      ea dicta atque sequi beatae error iure at accusantium enim! Officia, adipisci.
+                    </div>
+                  </div>
+
+                  <button class="modal-close " aria-label="close">
+                    Close
+                  </button>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--cardDefinitiva-->
+      <!--goranssonska-skolan-->
+      <div class="column is-4" id="card2">
+        <div class="card has-text-centered">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="../img/goranssonska-skolan-gris.png" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img src="../img/../img/goranssonska-skolan-gris.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div>
+                <p class="title is-4">Goranssonska-skolan</p>
+                
+                <a href="#"><p class="subtitle is-6">twitter</p></a>
+                
+                <a href="#"><p class="subtitle is-6">faceboock</p></a>
+                
+                <a href="#"><p class="subtitle is-6">mail</p></a>
+              </div>
+            </div>
+
+            <div class="content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus nec iaculis mauris.
+              <br>
+            </div>
+            <footer>
+              <button class="js-modal-trigger" data-target="idDelModal">
+                Mas info
+              </button>
+
+              <!-- modal -->
+              <div id="idDelModal" class="modal">
+                <div class="modal-background"></div>
+
+                <div class="modal-content">
+                  <div class="box">
+                    <p>MaxValier</p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi,
+                    dignissimos et consectetur velit eius illo deleniti ipsa libero,
+                    ea dicta atque sequi beatae error iure at accusantium enim! Officia, adipisci.
+                  </div>
+                </div>
+
+                <button class="modal-close " aria-label="close">
+                  Close
+                </button>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <!--cardDefinitiva-->
+
+      <!--sandvik-->
+      <div class="column is-4" id="card1">
+        <div class="card has-text-centered">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="../img/sandvik.png" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img src="../img/../img/sandvik.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div>
+                <p class="title is-4">Sandvik</p>
+                
+                <a href="#"><p class="subtitle is-6">twitter</p></a>
+                
+                <a href="#"><p class="subtitle is-6">faceboock</p></a>
+                
+                <a href="#"><p class="subtitle is-6">mail</p></a>
+              </div>
+            </div>
+
+            <div class="content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus nec iaculis mauris.
+              <br>
+            </div>
+            <footer>
+              <button class="js-modal-trigger" data-target="idDelModal">
+                Mas info
+              </button>
+
+              <!-- modal -->
+              <div id="idDelModal" class="modal">
+                <div class="modal-background"></div>
+
+                <div class="modal-content">
+                  <div class="box">
+                    <p>MaxValier</p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi,
+                    dignissimos et consectetur velit eius illo deleniti ipsa libero,
+                    ea dicta atque sequi beatae error iure at accusantium enim! Officia, adipisci.
+                  </div>
+                </div>
+
+                <button class="modal-close " aria-label="close">
+                  Close
+                </button>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <!--htl-wolfsberg-->
+      <div class="column is-4" id="card2">
+        <div class="card has-text-centered">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="../img/htl-wolfsberg-gris.png" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img src="../img/../img/htl-wolfsberg.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div>
+                <p class="title is-4">Htl-wolfsberg</p>
+                
+                <a href="#"><p class="subtitle is-6">twitter</p></a>
+                
+                <a href="#"><p class="subtitle is-6">faceboock</p></a>
+                
+                <a href="#"><p class="subtitle is-6">mail</p></a>
+              </div>
+            </div>
+
+            <div class="content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus nec iaculis mauris.
+              <br>
+            </div>
+            <footer>
+              <button class="js-modal-trigger" data-target="idDelModal">
+                Mas info
+              </button>
+
+              <!-- modal -->
+              <div id="idDelModal" class="modal">
+                <div class="modal-background"></div>
+
+                <div class="modal-content">
+                  <div class="box">
+                    <p>Htl-wolfsberg</p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi,
+                    dignissimos et consectetur velit eius illo deleniti ipsa libero,
+                    ea dicta atque sequi beatae error iure at accusantium enim! Officia, adipisci.
+                  </div>
+                </div>
+
+                <button class="modal-close " aria-label="close">
+                  Close
+                </button>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <!--cenifer-->
+      <div class="column is-4" id="card1">
+        <div class="card has-text-centered">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="../img/cenifer-gris.png" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img src="../img/../img/cenifer.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div>
+                <p class="title is-4">Cenifer</p>
+                
+                <a href="https://twitter.com/_cuatrovientos"><p class="subtitle is-6 is-link">Twitter</p></a>
+                
+                <a href="https://www.facebook.com/cipcuatrovientos"><p class="subtitle is-6">faceboock</p></a>
+                
+                <a href="info@cuatrovientos.org"><p class="subtitle is-6">mail</p></a>
+              </div>
+            </div>
+
+            <div class="content">
+              CENIFER. Centro de Referencia Nacional de carácter público a nivel estatal y 
+              autonómico, referente en el ámbito de la Familia Profesional de Energía y Agua ,
+              y áreas de Energías Renovables y Eficiencia Energética.
+              <br>
+            </div>
+            <footer>
+              <button class="js-modal-trigger" data-target="idDelModal">
+                Mas info
+              </button> 
+              <div id="idDelModal" class="modal">
+                <div class="modal-background"></div>
+          
+                <div class="modal-content">
+                  <div class="box">
+                    <p>Cenifer</p>
+                    CENIFER. Centro de Referencia Nacional de carácter público a nivel estatal y 
+              autonómico, referente en el ámbito de la Familia Profesional de Energía y Agua ,
+              y áreas de Energías Renovables y Eficiencia Energética. A través del ejercicio de
+              las funciones, el Centro debe servir de referencia al conjunto
+                del Sistema de Cualificaciones y Formación Profesional,
+              y a los sectores productivos de su familia profesional.
+                  </div>
+                </div>
+          
+                <button class="modal-close " aria-label="close">
+                  Close
+                </button>
+              </div>
+            </footer>
           </div>
         </div>
       </div>
     </section>
+   <script src="../js/partners.js"></script>
+</body>
 
-
-
-    <!--Tarjetas-->
-    <div class="column is-5">
-      <div class="card">
-        <header class="card-header">
-          <p class="card-header-title">
-            Partner1
-          </p>
-        </header>
-        
-          <div class="card-image">
-            <img src="../img/cenifer.png">
-            <div class="text is-size-5" >
-              Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. 
-              Phasellus nec iaculis mauris.
-              <br>
-            </div>
-          </div>
-        </div>
-        <footer class="card-footer">
-          <!--Aqui va a ir una opcion para que al pulsar 
-            más info se expanda y muestre más info-->
-          <a href="" class="card-footer-item">Mas informacion</a>
-        </footer>
-    </div>
-    
-    <div class='column is-5'>
-      <div class="card">
-        <header class="card-header">
-          <p class="card-header-title">
-            Partner3
-          </p>
-        </header>
-        
-          <div class="card-image">
-            <img src="../img/cenifer.png">
-            <div class="text is-size-5">
-              Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. 
-              Phasellus nec iaculis mauris.
-              <br>
-            </div>
-          </div>
-      </div>
-      <footer class="card-footer">
-        <!--Aqui va ha ir una opcion par que al pulsar 
-          mas info se expanda y muestre mas indo-->
-          <button >nclick="document.getElementById('el').style.display='block'" class="w3-button w3-black"
-
-            pulsa aqui
-          </button>
-        <a href="" class="card-footer-item">Mas informacion</a>
-      </footer>
-    </div>
-    <div class='column is-5'>
-      <div class="card">
-        <header class="card-header">
-          <p class="card-header-title">
-            Partner4
-          </p>
-          </header>
-        
-          <div class="card-image">
-            <img src="../img/cenifer.png">
-            <div class="text is-size-5">
-              Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. 
-              Phasellus nec iaculis mauris.
-              <br>
-            </div>
-          </div>
-      </div>
-      <footer class="card-footer">
-        <!--Aqui va ha ir una opcion par que al pulsar 
-          mas info se expanda y muestre mas indo-->
-        <a href="" class="card-footer-item">Mas informacion</a>
-      </footer>
-    </div>
-    <div class="w3-container">
-      <h2>Modal Tabs</h2>
-      <p>In this example we add tabbed content inside the modal.</p>
-      
-      <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Tabbed Modal</button>
-      
-      <div id="id01" class="w3-modal">
-       <div class="w3-modal-content w3-card-4 w3-animate-zoom">
-        <header class="w3-container w3-blue"> 
-         <span onclick="document.getElementById('id01').style.display='none'" 
-         class="w3-button w3-blue w3-xlarge w3-display-topright">&times;</span>
-         <h2>Header</h2>
-        </header>
-      
-        <div class="w3-bar w3-border-bottom">
-         <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'London')">London</button>
-         <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Paris')">Paris</button>
-         <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-        </div>
-      
-        <div id="London" class="w3-container city">
-         <h1>London</h1>
-         <p>London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</p>
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-      
-        <div id="Paris" class="w3-container city">
-         <h1>Paris</h1>
-         <p>Paris is the capital of France.</p>
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-      
-        <div id="Tokyo" class="w3-container city">
-         <h1>Tokyo</h1>
-         <p>Tokyo is the capital of Japan.</p><br>
-        </div>
-      
-        <div class="w3-container w3-light-grey w3-padding">
-         <button class="w3-button w3-right w3-white w3-border" 
-         onclick="document.getElementById('id01').style.display='none'">Close</button>
-        </div>
-       </div>
-      </div>
-      
-      </div>
-      
-      <script>
-      document.getElementsByClassName("tablink")[0].click();
-      
-      function openCity(evt, cityName) {
-        var i, x, tablinks;
-        x = document.getElementsByClassName("city");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablink");
-        for (i = 0; i < x.length; i++) {
-          tablinks[i].classList.remove("w3-light-grey");
-        }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.classList.add("w3-light-grey");
-      }
-      </script>
-
-
-
-    <footer>
-      <div class="container">
-        <div class="columns has-text-grey-dark">
-          <div class="column is-6">
-            <p>Copyright © 2016. All Rights Reserved</p>
-          </div>
-          <div class="column is-6">
-            <ul class="footermenu is-pulled-right">
-              <li class="is-border-right"><a href="">Privacy Policy</a></li>
-              <li class="is-border-right"><a href="">About Us</a></li>
-              <li class="is-border-right"><a href="">Support</a></li>
-              <li><a href="">Blog</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script type="text/javascript" src="../js/main.js"></script>
-  </body>
 </html>
